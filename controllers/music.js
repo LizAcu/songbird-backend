@@ -3,7 +3,14 @@ const music = express.Router();
 const Music = require('../models/music.js');
 
 
+// music.all('/', (req, res) => {
+    // res.header("Access-Control-Allow-Origin", "*");
+    // res.header("Access-Control-Allow-Headers", "X-Requested-With");
+    // next()
+// })
+
 music.get('/music', (req, res) => {
+
     res.send('index page')
 });
 

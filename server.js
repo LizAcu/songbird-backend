@@ -20,7 +20,13 @@ const corsOptions = {
     }
   }
 }
-// app.use(cors({credentials: true}))
+// app.all('/', function(req, res, next) {
+  // res.header("Access-Control-Allow-Origin", "*");
+  // res.header("Access-Control-Allow-Headers", "X-Requested-With");
+  // next()
+// });
+
+// app.use(cors({credentials: true})) ^ got rid of corbs error but still not playing wtf 
 app.use(cors(corsOptions));
 //now i'm getting a cors error?
 
